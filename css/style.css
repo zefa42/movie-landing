@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 @import url('reset.css');
 
 /* Header */
@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   background-color: rgba(135, 136, 168, 0.5);
   align-items: center;
-  padding: 5vh 5vw;
+  padding: 2vh 5vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,9 @@ header {
 }
 
 header h1 a {
-  font: bold 24px/50px 'Roboto';
+  font-size: 24px;
+  line-height: 1.2; /* 혹은 30px 등으로 지정 */
+  font-weight: bold;
   color: #d6d6d6;
 }
 
@@ -78,7 +80,7 @@ figure .text {
 }
 
 figure .text p {
-  font: normal 5vw/1 'Sora';
+  font: normal 5vw/1 'Garamond';
   color: #ffffff;
 }
 
@@ -96,7 +98,7 @@ figure .text ul li a i {
 
 figure .text ul li a strong {
   color: #ffffff;
-  font: normal 14px/1 'Sora';
+  font: normal 14px/1 'Garamond';
 }
 
 /* 모바일 메뉴 초기 숨김 상태 */
