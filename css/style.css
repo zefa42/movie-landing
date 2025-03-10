@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url('reset.css');
+
+/* Header */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(135, 136, 168, 0.5);
+  align-items: center;
+  padding: 5vh 5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header h1 a {
+  font: bold 24px/50px 'Roboto';
+  color: #d6d6d6;
+}
+
+header .btn_menu {
+  font-size: 24px;
+  color: #d6d6d6;
+  display: none;
+}
+
+header #gnb {
+  display: flex;
+}
+
+header #gnb li {
+  margin: 0 20px;
+}
+
+header #gnb li a {
+  font: bold 16px/1 'Roboto';
+  color: #d6d6d6;
+  letter-spacing: 3px;
+}
+
+header #sns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header #sns li a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* 백그라운드 비디오 */
+figure {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure .text {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  margin: 10px;
+  transform: translate(0, -10%);
+}
+
+figure .text p {
+  font: normal 5vw/1 'Sora';
+  color: #ffffff;
+}
+
+figure .text ul {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+figure .text ul li a i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+figure .text ul li a strong {
+  color: #ffffff;
+  font: normal 14px/1 'Sora';
+}
+
+/* 모바일 메뉴 초기 숨김 상태 */
+#snb .sub_menu {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+/* Mobile */
+@media screen and (max-width: 968px) {
+  header #gnb {
+    display: none;
+  }
+
+  header #sns {
+    display: none;
+  }
+
+  header .btn_menu {
+    display: block;
+  }
+
+  figure .text p {
+    font-size: 15vw;
+  }
+
+  /* 모바일 메뉴 영역 */
+  #snb {
+    display: block;
+  }
+
+  #snb .sub_menu {
+    position: absolute;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    right: 5vw;
+    text-align: right;
+  }
+
+  #snb .sub_menu li {
+    padding: 10px 0;
+    font: normal 14px/1 'Sora';
+    color: #222;
+  }
+
+  #snb .sub_menu li a i {
+    margin-left: 8px;
+  }
+
+  /* 숨김 처리 클래스 (.hide) 적용 시 */
+  #snb .sub_menu.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* 숨김 클래스가 없으면 보임 */
+  #snb .sub_menu:not(.hide) {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font: 12px/1 'arial';
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
