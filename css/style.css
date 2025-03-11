@@ -43,7 +43,7 @@ header #gnb li a {
 header #sns {
   /* SNS 아이콘은 오른쪽(마지막 요소) */
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 }
 
