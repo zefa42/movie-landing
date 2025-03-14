@@ -114,6 +114,7 @@ figure .text ul li a strong {
 }
 
 /* Mobile */
+/* Mobile */
 @media screen and (max-width: 968px) {
   header #gnb {
     display: none;
@@ -127,15 +128,17 @@ figure .text ul li a strong {
     display: block;
   }
 
+  /* 메뉴 컨테이너를 오른쪽으로 밀기 위해 추가 */
+  header #snb {
+    margin-left: auto;
+    display: block;
+  }
+
   figure .text p {
     font-size: 15vw;
   }
 
   /* 모바일 메뉴 영역 */
-  #snb {
-    display: block;
-  }
-
   #snb .sub_menu {
     position: absolute;
     padding: 10px 25px;
